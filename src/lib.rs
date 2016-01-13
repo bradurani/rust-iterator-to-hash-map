@@ -1,8 +1,6 @@
-
-
-
 use std::collections::HashMap;
 use std::hash::Hash;
+
 pub trait ToHashMap<T,K,V, FK, FV>
     where K:Hash,
           K:Eq,
@@ -17,7 +15,7 @@ impl<T, K, V, FK, FV, I> ToHashMap<T, K, V, FK, FV> for I
           K: Eq,
           FK: Fn(&T) -> K,
           FV: Fn(&T) -> V,
-          I: Iterator<Item = T>
+          I: IntoIterator<Item = T>
 {
     fn to_hash_map(self, key_func: FK, value_func: FV) -> HashMap<K, V> {
         let mut hm: HashMap<K, V> = HashMap::new();

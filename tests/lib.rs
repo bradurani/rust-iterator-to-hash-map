@@ -1,8 +1,7 @@
-extern crate iteratortohashmap;
+extern crate iterator_to_hash_map;
 
 use std::collections::HashMap;
-use std::hash::Hash;
-use iteratortohashmap::ToHashMap;
+use iterator_to_hash_map::ToHashMap;
 
 struct Person {
     id: i32,
@@ -30,7 +29,7 @@ fn it_works() {
         i.first_name.to_string() + &" " + &i.last_name.to_string()
     };
 
-    let map = a.into_iter().to_hash_map(key_func, value_func);
+    let map = a.to_hash_map(key_func, value_func);
 
     let mut hm: HashMap<i32, String> = HashMap::new();
     hm.insert(1, "Brad Urani".to_string());

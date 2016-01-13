@@ -1,4 +1,9 @@
 [package]
-name = "iteratortohashmap"
+name = "iterator_to_hash_map"
 version = "0.9.0"
 authors = ["Brad Urani <bradurani@gmail.com>"]
+description = "A Rust crate that adds a method to any `Iterator` or `IntoIterator` (such as `Vec`) that converts it to a `HashMap` using the trait `ToHashMap`."
+repository = "https://github.com/bradurani/rust-iterator-to-hash-map"
+readme = "README.md"
+keywords = ["iterator", "hashmap"]
+license = "MIT"
