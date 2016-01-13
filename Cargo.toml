@@ -1,0 +1,4 @@
+[package]
+name = "iteratortohashmap"
+version = "0.9.0"
+authors = ["Brad Urani <bradurani@gmail.com>"]
