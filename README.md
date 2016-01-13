@@ -33,7 +33,7 @@ let value_func = |i: &Person| -> String {
 };
 
 let map = a.to_hash_map(key_func, value_func);
-# { 1: "Brad Urani", 2: "Barb Hanover" }
+// { 1: "Brad Urani", 2: "Barb Hanover" }
 ```
 
 ## Contributing
